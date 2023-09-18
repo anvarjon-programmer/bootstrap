@@ -1,0 +1,47 @@
+#about {
+  .about__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 15px;
+    .right__wraper {
+      display: flex;
+      align-items: center;
+      max-width: 550px;
+      border-radius: 5px;
+      background: #055bd3;
+      max-height: 270px;
+      gap: 30px;
+      .right__side {
+        // padding-left: 20px;
+        h3 {
+          color: #fff;
+          font-family: SF Pro Display;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          padding-left: 15px;
+          line-height: 50px; /* 138.889% */
+          max-width: 280px;
+        }
+      }
+      .left__side {
+        // padding-left: -60px;
+        img {
+          width: 100%;
+          height: 100%;
+          transform: translateY(-25px);
+        }
+        .second_img {
+          transform: translateY(-45px);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1060px) {
+  .about__wraper {
+    flex-direction: column;
+    gap: 110px;
+  }
+}
